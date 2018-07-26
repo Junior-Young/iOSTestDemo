@@ -15,6 +15,7 @@
 		143FA63B2109AEF9003C9B59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 143FA63A2109AEF9003C9B59 /* main.m */; };
 		143FA6452109AEF9003C9B59 /* newDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 143FA6442109AEF9003C9B59 /* newDemoTests.m */; };
 		143FA6502109AEF9003C9B59 /* newDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 143FA64F2109AEF9003C9B59 /* newDemoUITests.m */; };
+		143FA65F2109B995003C9B59 /* YModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 143FA65E2109B995003C9B59 /* YModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		143FA64B2109AEF9003C9B59 /* newDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		143FA64F2109AEF9003C9B59 /* newDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newDemoUITests.m; sourceTree = "<group>"; };
 		143FA6512109AEF9003C9B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143FA65D2109B995003C9B59 /* YModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YModel.h; sourceTree = "<group>"; };
+		143FA65E2109B995003C9B59 /* YModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				143FA62C2109AEF7003C9B59 /* AppDelegate.m */,
 				143FA62E2109AEF7003C9B59 /* ViewController.h */,
 				143FA62F2109AEF7003C9B59 /* ViewController.m */,
+				143FA65D2109B995003C9B59 /* YModel.h */,
+				143FA65E2109B995003C9B59 /* YModel.m */,
 				143FA6312109AEF7003C9B59 /* Main.storyboard */,
 				143FA6342109AEF9003C9B59 /* Assets.xcassets */,
 				143FA6362109AEF9003C9B59 /* LaunchScreen.storyboard */,
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				143FA6302109AEF7003C9B59 /* ViewController.m in Sources */,
+				143FA65F2109B995003C9B59 /* YModel.m in Sources */,
 				143FA63B2109AEF9003C9B59 /* main.m in Sources */,
 				143FA62D2109AEF7003C9B59 /* AppDelegate.m in Sources */,
 			);
