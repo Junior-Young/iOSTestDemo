@@ -13,7 +13,13 @@
 
 - (NSString *)name {
     NSString *name = @"yang";
-    return name
+    return name;
 }
+
+- (NSInteger)age {
+    NSInteger age = 1;
+    return age;
+}
+
 
 @end

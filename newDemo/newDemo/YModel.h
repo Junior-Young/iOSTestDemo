@@ -12,4 +12,8 @@
 
 - (NSString *)name;
 
+- (NSInteger)age;
+
+
+
 @end
