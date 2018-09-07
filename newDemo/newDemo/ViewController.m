@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import "newDemo-Swift.h"
 @interface ViewController ()<ASTableDelegate, ASTableDataSource>
 
 @property (nonatomic, strong) ASTableNode *tableNode;
@@ -30,13 +31,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.navigationItem.title = @"主页";
     //[self.view addSubview:self.newView];
     //[self.view addSubnode:self.tableNode];
     //[self gcdOnceTest];
     //[self gcdGroupTest];
-    [self operation1];
-    // Do any additional setup after loading the view, typically from a nib.
+    //[self operation1];
+    [self setupRightNavigationItem];
+    [self setupViews];
+}
+
+#pragma mark -pingfang
+- (void)setupViews {
+    UILabel *textLable = [[UILabel alloc] initWithFrame:CGRectMake(20, 200, 300, 30)];
+    textLable.text = @"这是字体验证:systemFont";
+    textLable.font = [UIFont systemFontOfSize:24];
+    [self.view addSubview:textLable];
+    
+    UILabel *textLable1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 250, 300, 30)];
+    textLable1.text = @"这是字体验证:PingFangSC-Regular";
+    textLable1.font = [UIFont fontWithName:@"PingFangSC-Regular" size:24];
+    [self.view addSubview:textLable1];
+}
+
+#pragma mark -swift
+- (void)setupRightNavigationItem {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Swift" style:(UIBarButtonItemStyleDone) target:self action:@selector(gotoSwiftVC)];
+}
+
+- (void)gotoSwiftVC {
+    testSwiftViewController *swiftVC = [[testSwiftViewController alloc] init];
+    [self.navigationController pushViewController:swiftVC animated:YES];
 }
 
 
