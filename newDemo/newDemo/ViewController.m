@@ -45,12 +45,12 @@
 - (void)setupViews {
     UILabel *textLable = [[UILabel alloc] initWithFrame:CGRectMake(20, 200, 300, 30)];
     textLable.text = @"这是字体验证:systemFont";
-    textLable.font = [UIFont systemFontOfSize:24];
+    textLable.font = [UIFont systemFontOfSize:20];
     [self.view addSubview:textLable];
     
     UILabel *textLable1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 250, 300, 30)];
     textLable1.text = @"这是字体验证:PingFangSC-Regular";
-    textLable1.font = [UIFont fontWithName:@"PingFangSC-Regular" size:24];
+    textLable1.font = [UIFont fontWithName:@"PingFangSC-Regular" size:20];
     [self.view addSubview:textLable1];
 }
 
